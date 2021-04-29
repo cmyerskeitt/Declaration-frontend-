@@ -1,4 +1,4 @@
-export default function affirmationReducer(state = {affirmation: []}, action){
+export default function affirmationReducer(state = {affirmations: []}, action){
     return state 
 }
 
