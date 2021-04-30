@@ -7,7 +7,7 @@ class DeclarationForm extends React.Component {
     state = {
          content: '',
          author: '',
-         category: '',
+         category: ''
          
     }
 
@@ -36,7 +36,7 @@ class DeclarationForm extends React.Component {
     render(){
         return(
             <div>
-                <form>
+                <form onSubmit={this.handleOnSubmit}>
                     <p>
                     <label>Declaration:</label><br></br>
                     <textarea  name="content" onChange={this.handleOnChange} value={this.state.name}></textarea>
@@ -47,7 +47,7 @@ class DeclarationForm extends React.Component {
                     <label>Category:</label>
                     <input type="text" name="category" onChange={this.handleOnChange} value={this.state.category}/>
                     </p>
-                    <button type="submit" onSubmit={this.handleOnSubmit}>Add Declaration</button>
+                    <button type="submit" >Submit</button>
                 </form>
             </div>
         )
