@@ -1,15 +1,18 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import DeclarationForm from './components/DeclarationForm'
-import Declaration from './containers/Declaration'
+import Declarations from './containers/Declarations'
+
 
 class App extends React.Component {  
     render() {     
         return (
             <div>
-                 <h1>Declaration</h1>
+                <div>
+                 <h1>Declarations Header </h1>
+                 </div>
                  <DeclarationForm/>
-                 <Declaration/>
+                 <Declarations/>
             </div>
             
               

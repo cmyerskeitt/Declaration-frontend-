@@ -4,11 +4,11 @@ import App from './App'
 import {Provider} from 'react-redux'
 import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
-import affirmationReducer from './reducers/declarationReducer'
+import declarationReducer from './reducers/declarationsReducer'
 import {composeWithDevTools} from 'redux-devtools-extension'
 
 
-const store = createStore(affirmationReducer, composeWithDevTools(applyMiddleware(thunk)))
+const store = createStore(declarationReducer, composeWithDevTools(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
